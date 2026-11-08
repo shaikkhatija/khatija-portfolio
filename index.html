@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Khatija Shaik | Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Khatija Shaik, a frontend developer skilled in HTML, CSS, JavaScript, React.js and Python." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Khatija<span>.dev</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/Khatija-Shaik-Resume.pdf" target="_blank" rel="noopener" class="nav-resume">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I am</p>
+          <h1>Khatija Shaik,<br /><span class="grad">Frontend Developer</span></h1>
+          <p class="intro">
+            Motivated Frontend Developer and ECE undergraduate with hands-on internship experience in responsive web design, React.js and Python.
+            Built academic projects in MATLAB image processing and hardware-software automation.
+            Eager to contribute clean code and scalable solutions in an entry-level software engineering role.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="assets/Khatija-Shaik-Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+            <a class="btn btn-outline" href="assets/Khatija-Shaik-Resume.pdf" download="Khatija-Shaik-Resume.pdf">Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-ring">
+            <img src="assets/photo.jpg" alt="Khatija Shaik" onerror="this.onerror=null;this.src='assets/favicon.svg';" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="title">About <span class="grad">Me</span></h2>
+        <p class="lead">
+          I enjoy turning ideas into clean, responsive interfaces. Alongside frontend development, I have built
+          practical engineering projects in image processing and automation, and I learn by building.
+        </p>
+
+        <div class="about-grid">
+          <div>
+            <h3 class="sub">Education</h3>
+            <ol class="timeline">
+              <li>
+                <span class="dot"></span>
+                <span class="years">2022 – 2026</span>
+                <h4>B.Tech in Electronics and Communication Engineering</h4>
+                <p>Anurag Engineering College, Kodad &middot; <strong>90%</strong></p>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <span class="years">2020 – 2022</span>
+                <h4>Intermediate, Board of Intermediate Education</h4>
+                <p>Suguna Junior College, Kodad &middot; <strong>97%</strong></p>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <span class="years">2019 – 2020</span>
+                <h4>SSC, Board of Secondary School Education</h4>
+                <p>St. Joseph’s CCR Vidhyanilayam, Kodad &middot; <strong>100%</strong></p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="cards-col">
+            <div class="mini-card">
+              <h3 class="sub">Internships</h3>
+              <ul>
+                <li><strong>Frontend Development Intern</strong> &mdash; Elbert Technologies. Built interactive web interfaces with HTML5, CSS3 and JavaScript, and modular React.js components with cross-browser responsiveness.</li>
+                <li><strong>Python Programming and Development Intern</strong> &mdash; Innovate by Hexaind. Worked on Python fundamentals, data structures, OOP and scripting, plus SQLite database operations.</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h3 class="sub">Certifications</h3>
+              <ul>
+                <li>Generative AI and Agentic AI Training &ndash; ExcelR</li>
+                <li>Innovation Coach Certification &ndash; Soham Academy</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h3 class="sub">Additional Information</h3>
+              <ul>
+                <li><strong>Languages:</strong> English, Hindi, Telugu</li>
+                <li><strong>Interests:</strong> Drawing, Carroms, Singing</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h3 class="sub">Achievements</h3>
+              <ul>
+                <li>Participated in the state-level Viksit Bharat Youth Parliament elocution competition</li>
+                <li>First prize in English elocution and poster presentation at the college fest</li>
+                <li>Appreciation certificates for district-level project presentations at the National Children’s Science Congress, 2016 and 2017</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="title">Skills <span class="grad">&amp; Tools</span></h2>
+        <p class="lead">The technologies and tools I use to build my projects.</p>
+
+        <h3 class="sub center">Tech Skills</h3>
+        <ul class="skill-grid" id="techGrid"></ul>
+
+        <h3 class="sub center">Tools</h3>
+        <ul class="skill-grid" id="toolGrid"></ul>
+
+        <h3 class="sub center">Soft Skills</h3>
+        <ul class="chips">
+          <li>Adaptability</li><li>Teamwork</li><li>Problem Solving</li>
+          <li>Communication</li><li>Attention to Detail</li><li>Time Management</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="title">My <span class="grad">Projects</span></h2>
+        <p class="lead">Everything you need to know about each project is visible right on the card.</p>
+        <div class="project-grid" id="projectGrid"></div>
+        <div class="center-row">
+          <button class="btn btn-outline" id="viewMore" hidden>View more projects</button>
+        </div>
+
+        <h3 class="sub center gh-title">GitHub Stats</h3>
+        <div class="stat-grid" id="ghStats">
+          <div class="stat"><strong id="stRepos">–</strong><span>Public repositories</span></div>
+          <div class="stat"><strong id="stCommits">–</strong><span>Contributions in the last year</span></div>
+          <div class="stat"><strong id="stStars">–</strong><span>Stars earned</span></div>
+          <div class="stat"><strong id="stFollowers">–</strong><span>Followers</span></div>
+        </div>
+
+        <h3 class="sub center">GitHub Calendar</h3>
+        <div class="cal-card">
+          <div class="cal-scroll">
+            <div class="cal-months" id="calMonths"></div>
+            <div class="cal-grid" id="calGrid" aria-label="GitHub contribution calendar for the last 12 months"></div>
+          </div>
+          <div class="cal-foot">
+            <a href="https://github.com/shaikkhatija" target="_blank" rel="noopener">@shaikkhatija on GitHub</a>
+            <div class="legend">Less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> More</div>
+          </div>
+          <p class="cal-note" id="calNote"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2 class="title">Get In <span class="grad">Touch</span></h2>
+        <p class="lead">Open to Developer roles and internships. Reach out any time.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a class="info-card" href="mailto:shaikkhatija9999@gmail.com">
+              <span class="ic">✉</span><span><small>Email</small>shaikkhatija9999@gmail.com</span>
+            </a>
+            <a class="info-card" href="tel:+919912986996">
+              <span class="ic">☎</span><span><small>Phone</small>+91 99129 86996</span>
+            </a>
+            <a class="info-card" href="https://www.linkedin.com/in/khatija-shaik" target="_blank" rel="noopener">
+              <span class="ic">in</span><span><small>LinkedIn</small>linkedin.com/in/khatija-shaik</span>
+            </a>
+            <a class="info-card" href="https://github.com/shaikkhatija" target="_blank" rel="noopener">
+              <span class="ic">GH</span><span><small>GitHub</small>github.com/shaikkhatija</span>
+            </a>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <h3 class="sub">Send a message</h3>
+            <label>Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>Message
+              <textarea name="message" rows="5" placeholder="Write your message" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed and built by Khatija Shaik &middot; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
